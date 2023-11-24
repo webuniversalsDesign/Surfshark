@@ -1,3 +1,40 @@
+@media only screen and (max-width:600px){
+        .banner{
+width: 60%;
+display: none;
+    }
+
+     .login-section{
+        width: 100%;
+    }
+
+ .login-container{
+width: 95%; 
+}
+
+}
+
+@media only screen and (min-width:998px){
+        .banner{
+width: 60%;
+display: block;
+    }
+
+     .login-section{
+        width: 40%;
+    }
+
+ .login-container{
+width: 60%; 
+}
+
+
+}
+
+@media only screen and (min-width:1400px){
+}
+
+
 .login-body{
     position: relative;
     height: 100vh;
@@ -13,16 +50,14 @@
     border-radius: 15px;
     background-color: white;
     height: 400px;
-    width: 60%;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     }
 
-    .banner{
-width: 60%;
-    }
+
 
     .banner img{
 height: 90%;
@@ -30,9 +65,7 @@ width: 100%;
 margin-top: 30px;
     }
 
-    .login-section{
-        width: 40%;
-    }
+   
 
     .login-form{
         width: 100%;
@@ -82,16 +115,107 @@ margin-top: 30px;
     
     }
 
-    .login-section h5{
-        font-weight: 700;
-        text-align: center;
+    .login-section{
+position: relative;
     }
 
-    .login-section p{
+    .login-section h5{
+        /* font-weight: 700; */
+        text-align: center;
+        font-family: 'Baloo Bhaina 2', sans-serif;
+    }
+
+
+    .header-font{
+        font-family: 'Baloo Bhaina 2', sans-serif;
+
+    }
+
+    .login-section .card-text{
         margin-bottom: 40px;
         text-align: center;
         font-size: 12px;
-        font-weight: 500;
+        font-family: 'Nunito', sans-serif;
+     
     }
 
+    .subheader-font{
+        font-family: 'Nunito', sans-serif;
+    }
+
+.warning-message{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    color: white;
+    background-color: #dc3545;
+    line-height: 2;
+    padding: 0px 10px;
+    border-radius: 2px;
+    font-weight: 500 ;
+    width: max-content;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform-origin:top ;
+}
+
+.warning-add{
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+}
+
+.warning-message .icon{
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.forgot-popup{
+    position: absolute;
+    height: 0vh;
+    width: 0%;
+    backdrop-filter: blur(25px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+border-radius: 10px;
+transition: all 0.2s ease-in-out;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+}
+
+
+@media only screen and (max-width:600px){
+
+
+.feropen{
+height: 200px;
+width: 90%;
+opacity: 1;
+padding: 10px;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+visibility: visible;
+}
+}
+
+@media only screen and (min-width:998px){
+
+.feropen{
+height: 200px;
+width: 20%;
+opacity: 1;
+padding: 10px;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+visibility: visible;
+}
+}
     
+.close-icon{
+    cursor: pointer;
+}
+
